@@ -4,6 +4,8 @@
  */
 package com.mycompany.atividadesenac;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author arthur.mpenteado
@@ -53,6 +55,11 @@ public class imc extends javax.swing.JFrame {
         });
 
         jButton1.setText("calcular");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -92,12 +99,30 @@ public class imc extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTalturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTalturaActionPerformed
-        
+    
     }//GEN-LAST:event_jTalturaActionPerformed
 
     private void jTpesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTpesoActionPerformed
         
     }//GEN-LAST:event_jTpesoActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        valores imc = new valores(
+        Double.parseDouble(jTpeso.getText()),
+                Double.parseDouble(jTaltura.getText())
+        );
+        System.out.println(imc);
+
+
+        
+        
+        
+        
+        
+        
+                
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
