@@ -9,5 +9,8 @@ package com.mycompany.atividadesenac;
  * @author arthur.mpenteado
  */
 public class atvsenac {
-    
+     public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+            
 }
